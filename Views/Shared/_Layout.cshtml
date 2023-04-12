@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["title"] - my first csharp project</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <header>
+       
+            <a class="logo">Logo</a>
+            <ul class="menu">
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Home/About">About</a></li>
+                <li><a href="/Home/Skills">Skills</a></li>
+                <li><a href="/Home/Portfolio">Protfolio</a></li>
+                <li><a href="/Home/Services">Service</a></li>
+            </ul>
+            <a class="btn" href="/Home/Contact">Contact Us</a>
+    
+    </header>
+
+    <section class="container">
+       @RenderBody()
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2022 All right Reserved <span> AL JABIR</span></p>
+    </div>
+</body>
+</html>
